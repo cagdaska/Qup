@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="page-user-screen">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta name=description content="Qup">
+    <title>Qup</title>
+    <link rel="shortcut icon" href="">
+    <link href="assets/styles/main.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/mq.genie.min.js"></script>
+</head>
+<body>
+<header id="main-header">
+    <div class="container flex jc-sb ai-cen">
+        <div class="header-box header-box-left"></div>
+        <div class="header-box header-box-center jc-cen">
+            <picture>
+                <source srcset="assets/images/img-user.webp 1x, assets/images/img-user@2x.webp 2x, assets/images/img-user@3x.webp 3x, assets/images/img-user@4x.webp 4x" type="image/webp">
+                <source srcset="assets/images/img-user.jpg 1x, assets/images/img-user@2x.jpg 2x, assets/images/img-user@3x.jpg 3x, assets/images/img-user@4x.jpg 4x" type="image/jpeg">
+                <img src="assets/images/img-user.jpg" alt="User Image">
+            </picture>
+        </div>
+        <div class="header-box header-box-right jc-end">
+            <button class="btn btn-messages" aria-label="Messages"></button>
+            <button class="btn btn-more" aria-label="More"><span></span></button>
+        </div>
+    </div>
+</header>
+
+<div class="page-content">
+    <div class="container">
+        <div class="form">
+            <div class="heading">
+                <h1>
+                    Who are you <br/>
+                    picking up?
+                </h1>
+                <p>Check all that apply</p>
+            </div>
+
+            <div class="form-content">
+                <div class="input-box checkbox wide">
+                    <input type="checkbox" checked value="Cameron Williamson" id="c_ca_wi" name="pick_up">
+                    <label for="c_ca_wi">Cameron Williamson</label>
+                </div>
+                <div class="input-box checkbox wide">
+                    <input type="checkbox" checked value="Justin Williamson" id="c_ju_wi" name="pick_up">
+                    <label for="c_ju_wi">Justin Williamson</label>
+                </div>
+                <div class="input-box checkbox wide">
+                    <input type="checkbox" checked value="Jessica Williamson" id="c_ja_wi" name="pick_up">
+                    <label for="c_ja_wi">Jessica Williamson</label>
+                </div>
+            </div>
+
+            <div class="confirmation-btn-container">
+                <button class="btn btn-form btn-pink">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

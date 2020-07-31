@@ -319,12 +319,31 @@ body {
   position: relative;
   margin: 10px;
 }
+.page-user-screen body .page-content .form .form-content .input-box.wide {
+  width: 100%;
+}
+.page-user-screen body .page-content .form .form-content .input-box.checkbox {
+  height: auto;
+  margin: 10px 10px 2px;
+}
+.page-user-screen body .page-content .form .form-content .input-box.checkbox input:checked + label {
+  background-image: url("../images/icon-tick.svg");
+  background-position: 12px 11px;
+  background-repeat: no-repeat;
+  background-size: 32px auto;
+}
+.page-user-screen body .page-content .form .form-content .input-box.checkbox label {
+  font-weight: normal;
+  justify-content: flex-start;
+  padding: 16px 26px 16px 58px;
+  position: relative;
+}
 .page-user-screen body .page-content .form .form-content .input-box input {
   position: fixed;
   opacity: 0;
   pointer-events: none;
 }
-.page-user-screen body .page-content .form .form-content .input-box input:checked + label {
+.page-user-screen body .page-content .form .form-content .input-box input[type=radio]:checked + label {
   border-color: #DE00A7;
 }
 .page-user-screen body .page-content .form .form-content .input-box label {

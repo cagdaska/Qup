@@ -114,16 +114,47 @@
             position: relative;
             margin: 10px;
 
+            &.wide{
+              width: 100%;
+            }
+
+            &.checkbox{
+              height: auto;
+              margin: 10px 10px 2px;
+
+              input{
+                &:checked{
+                  & + label{
+                    background-image: url("../images/icon-tick.svg");
+                    background-position: 12px 11px;
+                    background-repeat: no-repeat;
+                    background-size: 32px auto;
+                  }
+                }
+              }
+
+              label{
+                font-weight: normal;
+                justify-content: flex-start;
+                padding: 16px 26px 16px 58px;
+                position: relative;
+              }
+            }
+
             input {
               position: fixed;
               opacity: 0;
               pointer-events: none;
 
-              &:checked {
-                & + label {
-                  border-color: #DE00A7;
+              &[type="radio"]{
+                &:checked {
+                  & + label {
+                    border-color: #DE00A7;
+                  }
                 }
               }
+
+
             }
 
             label {
