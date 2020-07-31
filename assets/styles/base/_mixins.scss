@@ -4,6 +4,9 @@ $tablet-width: 768px;
 $desktop-width: 1024px;
 $desktop-wide-width: 1300px;
 
+$col_black : #292936;
+$col_red : #F35E5E;
+
 // Mixins
 @mixin svg-color($SvgColor){
     &.stroke{
@@ -11,6 +14,14 @@ $desktop-wide-width: 1300px;
     }
     &.fill{
         fill: $SvgColor;
+    }
+}
+
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
     }
 }
 
@@ -77,19 +88,13 @@ $desktop-wide-width: 1300px;
 }
 
 @mixin retina2x {
-    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+    @media only screen and (min-resolution: 1.5dppx), only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
         @content;
     }
 }
 
 @mixin retina3x {
-    @media only screen and (-Webkit-min-device-pixel-ratio: 2.5), only screen and (-moz-min-device-pixel-ratio: 2.5), only screen and (-o-min-device-pixel-ratio: 5/2), only screen and (min-device-pixel-ratio: 2.5) {
+    @media only screen and (min-resolution: 2.5dppx), only screen and (-Webkit-min-device-pixel-ratio: 2.5), only screen and (min-device-pixel-ratio: 2.5) {
         @content;
-    }
-}
-
-@mixin ie11 {
-    _:-ms-fullscreen, :root {
-       @content;
     }
 }
