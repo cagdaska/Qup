@@ -1,0 +1,95 @@
+// Variables
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-wide-width: 1300px;
+
+// Mixins
+@mixin svg-color($SvgColor){
+    &.stroke{
+        stroke: $SvgColor;
+    }
+    &.fill{
+        fill: $SvgColor;
+    }
+}
+
+@mixin mobile-small {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin mobile-and-tablet {
+    @media (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-wide-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop-wide {
+    @media (min-width: #{$desktop-wide-width}) {
+        @content;
+    }
+}
+
+
+
+@mixin not-mobile {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin not-tablet {
+    @media (max-width: #{$tablet-width - 1px}), (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin not-mobile-and-tablet {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+@mixin not-desktop-wide {
+    @media (max-width: #{$desktop-wide-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin retina2x {
+    @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+        @content;
+    }
+}
+
+@mixin retina3x {
+    @media only screen and (-Webkit-min-device-pixel-ratio: 2.5), only screen and (-moz-min-device-pixel-ratio: 2.5), only screen and (-o-min-device-pixel-ratio: 5/2), only screen and (min-device-pixel-ratio: 2.5) {
+        @content;
+    }
+}
+
+@mixin ie11 {
+    _:-ms-fullscreen, :root {
+       @content;
+    }
+}

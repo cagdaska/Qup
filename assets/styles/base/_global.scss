@@ -1,0 +1,58 @@
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 35px;
+  margin: 0 auto;
+
+  @include mobile-small {
+    padding: 0 20px;
+  }
+}
+
+.flex{
+  display: flex;
+}
+
+.jc-cen{
+  justify-content: center;
+}
+
+.jc-sb{
+  justify-content: space-between;
+}
+
+.jc-end{
+  justify-content: flex-end;
+}
+
+.ai-cen{
+  align-items: center;
+}
+
+.mobile-only {
+  @include mobile {
+    display: block;
+  }
+
+  @include not-mobile {
+    display: none;
+  }
+}
+
+.tablet-desktop-only {
+  @include mobile {
+    display: none;
+  }
+
+  @include not-mobile {
+    display: block;
+  }
+}

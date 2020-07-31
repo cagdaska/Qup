@@ -1,0 +1,69 @@
+.btn {
+  background-color: transparent;
+  padding: 0;
+
+  &.btn-messages {
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/icon-messages.svg");
+  }
+
+  &.btn-more {
+    width: 26px;
+    height: 32px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      width: 6.5px;
+      height: 6px;
+      position: relative;
+      background-color: #fff;
+      border-radius: 50%;
+
+      &:before,
+      &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+
+      &:after {
+        left: 10px;
+      }
+    }
+  }
+
+  &.btn-form {
+    width: calc(100% + 30px);
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 32px;
+    padding: 17px;
+    margin: 0 -15px;
+
+    &.btn-white {
+      background-color: #fff;
+      color: #292936;
+    }
+
+    &.btn-pink {
+      background-color: #DE00A7;
+      color: #fff;
+    }
+
+    &:disabled {
+      background-color: #3851A7;
+      color: #2E448E;
+      cursor: default;
+    }
+  }
+}

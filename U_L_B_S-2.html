@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="page-user-screen">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta name=description content="Qup">
+    <title>Qup</title>
+    <link rel="shortcut icon" href="">
+    <link href="assets/styles/main.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/mq.genie.min.js"></script>
+</head>
+<body>
+<header id="main-header">
+    <div class="container flex jc-sb ai-cen">
+        <div class="header-box header-box-left"></div>
+        <div class="header-box header-box-center jc-cen">
+            <picture>
+                <source srcset="assets/images/img-user.webp 1x, assets/images/img-user@2x.webp 2x, assets/images/img-user@3x.webp 3x, assets/images/img-user@4x.webp 4x" type="image/webp">
+                <source srcset="assets/images/img-user.jpg 1x, assets/images/img-user@2x.jpg 2x, assets/images/img-user@3x.jpg 3x, assets/images/img-user@4x.jpg 4x" type="image/jpeg">
+                <img src="assets/images/img-user.jpg" alt="User Image">
+            </picture>
+        </div>
+        <div class="header-box header-box-right jc-end">
+            <button class="btn btn-messages" aria-label="Messages"></button>
+            <button class="btn btn-more" aria-label="More"><span></span></button>
+        </div>
+    </div>
+</header>
+
+<div class="page-content">
+    <div class="container">
+        <div class="form">
+            <div class="heading">
+                <h1>
+                    Delayed? <br/>
+                    Please update time
+                </h1>
+                <p>Let us know when you plan to arrive</p>
+            </div>
+
+            <div class="form-content">
+                <div class="input-box">
+                    <input type="radio" value="10m" id="at_10m" name="arrival_time">
+                    <label for="at_10m">10m</label>
+                </div>
+                <div class="input-box">
+                    <input type="radio" value="15m" id="at_15m" name="arrival_time">
+                    <label for="at_15m">15m</label>
+                </div>
+                <div class="input-box">
+                    <input type="radio" value="20m" id="at_20m" name="arrival_time">
+                    <label for="at_20m">20m</label>
+                </div>
+                <div class="input-box">
+                    <input type="radio" value="25m" id="at_25m" name="arrival_time">
+                    <label for="at_25m">25m</label>
+                </div>
+                <div class="input-box">
+                    <input type="radio" value="30m" id="at_30m" name="arrival_time">
+                    <label for="at_30m">30m</label>
+                </div>
+                <div class="input-box">
+                    <input type="radio" value="45m" id="at_45m" name="arrival_time">
+                    <label for="at_45m">45m</label>
+                </div>
+            </div>
+
+            <div class="confirmation-btn-container">
+                <button disabled class="btn btn-form btn-pink">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
