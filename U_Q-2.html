@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="page-user-screen">
+<html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -11,48 +11,49 @@
     <script src="assets/js/mq.genie.min.js"></script>
 </head>
 <body>
-<header id="main-header">
-    <div class="container flex jc-sb ai-cen">
-        <div class="header-box header-box-left"></div>
-        <div class="header-box header-box-center jc-cen">
-            <picture>
-                <source srcset="assets/images/img-user.webp 1x, assets/images/img-user@2x.webp 2x, assets/images/img-user@3x.webp 3x, assets/images/img-user@4x.webp 4x" type="image/webp">
-                <source srcset="assets/images/img-user.jpg 1x, assets/images/img-user@2x.jpg 2x, assets/images/img-user@3x.jpg 3x, assets/images/img-user@4x.jpg 4x" type="image/jpeg">
-                <img src="assets/images/img-user.jpg" alt="User Image">
-            </picture>
-        </div>
-        <div class="header-box header-box-right jc-end">
-            <button class="btn btn-messages" aria-label="Messages"></button>
-            <button class="btn btn-more" aria-label="More"><span></span></button>
-        </div>
-    </div>
-</header>
-
-<div class="page-content">
-    <div class="container">
-        <section id="queue-screen">
-            <div class="heading">
-                <h1>
-                    Thank you!
-                </h1>
-                <p>You’re in line! We’ll let you <br/>
-                    know when they are ready.</p>
+<div class="page-wrapper" id="page-user-screen">
+    <header id="main-header">
+        <div class="container flex jc-sb ai-cen">
+            <div class="header-box header-box-left"></div>
+            <div class="header-box header-box-center jc-cen">
+                <picture>
+                    <source srcset="assets/images/img-user.webp 1x, assets/images/img-user@2x.webp 2x, assets/images/img-user@3x.webp 3x, assets/images/img-user@4x.webp 4x" type="image/webp">
+                    <source srcset="assets/images/img-user.jpg 1x, assets/images/img-user@2x.jpg 2x, assets/images/img-user@3x.jpg 3x, assets/images/img-user@4x.jpg 4x" type="image/jpeg">
+                    <img src="assets/images/img-user.jpg" alt="User Image">
+                </picture>
             </div>
-
-            <div class="queue-status">
-                <p class="queue-position">
-                    <span>3</span>
-                    of 10
-                </p>
-
-                <p class="status-text">
-                    Notified!
-                </p>
-                
+            <div class="header-box header-box-right jc-end">
+                <button class="btn btn-messages" aria-label="Messages"></button>
+                <button class="btn btn-more" aria-label="More"><span></span></button>
             </div>
-        </section>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="container">
+            <section id="queue-screen">
+                <div class="heading">
+                    <h1>
+                        Thank you!
+                    </h1>
+                    <p>You’re in line! We’ll let you <br/>
+                        know when they are ready.</p>
+                </div>
+
+                <div class="queue-status">
+                    <p class="queue-position">
+                        <span>3</span>
+                        of 10
+                    </p>
+
+                    <p class="status-text">
+                        Notified!
+                    </p>
+
+                </div>
+            </section>
+        </div>
     </div>
 </div>
-
 </body>
 </html>
