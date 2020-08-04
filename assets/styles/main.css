@@ -448,20 +448,28 @@ body {
 }
 #page-admin #main-header {
   width: 100%;
+  min-height: 107px;
   background-color: #F3F3F3;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 25px 0 0;
+  padding: 9px 0 0;
   z-index: 9;
 }
 #page-admin #main-header .top {
-  padding: 0 27px 6px;
+  min-height: 54px;
+  padding: 0 0 6px;
 }
-#page-admin #main-header .top .btn-more span {
+#page-admin #main-header .top .header-box-left h1 {
+  font-size: 17px;
+}
+#page-admin #main-header .top .header-box-right {
+  padding: 16px 26px 0 0;
+}
+#page-admin #main-header .top .header-box-right .btn-more span {
   background-color: #292936;
 }
-#page-admin #main-header .top .btn-more span:before, #page-admin #main-header .top .btn-more span:after {
+#page-admin #main-header .top .header-box-right .btn-more span:before, #page-admin #main-header .top .header-box-right .btn-more span:after {
   background-color: #292936;
 }
 #page-admin #main-header nav {
@@ -535,6 +543,10 @@ body {
   margin: 4px 0 0;
   position: relative;
 }
+#page-admin .page-content .tab-content .list-box ul .list-item:hover {
+  border: 2px solid #c6c6c6;
+  background-color: #e0e0e0;
+}
 #page-admin .page-content .tab-content .list-box ul .list-item.red {
   background-color: #F35E5E;
   border-color: #F35E5E;
@@ -549,11 +561,11 @@ body {
   margin: 0;
 }
 #page-admin .page-content .tab-content .list-box ul .list-item .link-overlay {
-  width: 100%;
-  height: 100%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2px;
+  left: -2px;
   z-index: 2;
   cursor: pointer;
 }
