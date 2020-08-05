@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!--
+         Original dimensions: width="8" height="8"
+         Style via: fill
+         -->
+        <symbol id="svg-icon-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+            <path d="M4 0c-1.1 0-2 1.12-2 2.5s.9 2.5 2 2.5 2-1.12 2-2.5-.9-2.5-2-2.5zm-2.09 5c-1.06.05-1.91.92-1.91 2v1h8v-1c0-1.08-.84-1.95-1.91-2-.54.61-1.28 1-2.09 1-.81 0-1.55-.39-2.09-1z" />
+        </symbol>
+    </defs>
+    <defs>
+        <!--
+         Original dimensions: width="8" height="8"
+         Style via: fill
+         -->
+        <symbol id="svg-icon-calendar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+            <path d="M0 0v2h7v-2h-7zm0 3v4.91c0 .05.04.09.09.09h6.81c.05 0 .09-.04.09-.09v-4.91h-7zm1 1h1v1h-1v-1zm2 0h1v1h-1v-1zm2 0h1v1h-1v-1zm-4 2h1v1h-1v-1zm2 0h1v1h-1v-1z" />
+        </symbol>
+    </defs>
+    <defs>
+        <!--
+         Original dimensions: width="8" height="8"
+         Style via: fill
+         -->
+        <symbol id="svg-icon-users" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+            <path d="M5.5 0c-.51 0-.95.35-1.22.88.45.54.72 1.28.72 2.13 0 .29-.03.55-.09.81.19.11.38.19.59.19.83 0 1.5-.9 1.5-2s-.67-2-1.5-2zm-3 1c-.83 0-1.5.9-1.5 2s.67 2 1.5 2 1.5-.9 1.5-2-.67-2-1.5-2zm4.75 3.16c-.43.51-1.02.82-1.69.84.27.38.44.84.44 1.34v.66h2v-1.66c0-.52-.31-.97-.75-1.19zm-6.5 1c-.44.22-.75.67-.75 1.19v1.66h5v-1.66c0-.52-.31-.97-.75-1.19-.45.53-1.06.84-1.75.84s-1.3-.32-1.75-.84z"
+            />
+        </symbol>
+    </defs>
+    <defs>
+        <!--
+         Original dimensions: width="8" height="8"
+         Style via: fill
+         -->
+        <symbol id="svg-icon-settings" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+            <path d="M3.5 0l-.5 1.19c-.1.03-.19.08-.28.13l-1.19-.5-.72.72.5 1.19c-.05.1-.09.18-.13.28l-1.19.5v1l1.19.5c.04.1.08.18.13.28l-.5 1.19.72.72 1.19-.5c.09.04.18.09.28.13l.5 1.19h1l.5-1.19c.09-.04.19-.08.28-.13l1.19.5.72-.72-.5-1.19c.04-.09.09-.19.13-.28l1.19-.5v-1l-1.19-.5c-.03-.09-.08-.19-.13-.28l.5-1.19-.72-.72-1.19.5c-.09-.04-.19-.09-.28-.13l-.5-1.19h-1zm.5 2.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5z"
+            />
+        </symbol>
+    </defs>
+    <defs>
+        <!--
+         Original dimensions: width="8" height="8"
+         Style via: fill
+         -->
+        <symbol id="svg-icon-logout" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+            <path d="M3 0v1h4v5h-4v1h5v-7h-5zm-1 2l-2 1.5 2 1.5v-1h4v-1h-4v-1z" />
+        </symbol>
+    </defs>
+    <defs>
+        <!--
+         Original dimensions: width="10" height="15"
+         Style via: fill
+         -->
+    </defs>
+</svg>

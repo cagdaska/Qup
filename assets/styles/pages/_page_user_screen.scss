@@ -55,7 +55,7 @@
     display: flex;
     max-width: 698px;
     margin: 0 auto;
-    padding: 41px 0 38px;
+    padding: 41px 0 115px;
 
     .container {
       display: flex;
@@ -257,6 +257,41 @@
 
         &:first-child {
           margin-top: 0;
+        }
+      }
+    }
+  }
+
+  #main-footer{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+    background-color: #293C7D;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+
+    nav{
+      max-width: 698px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 10px;
+      margin: 0 auto;
+
+      a{
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        .icon-container{
+          margin: 0 4px 0 0;
+
+          svg{
+            fill: #fff;
+            display: block;
+          }
         }
       }
     }

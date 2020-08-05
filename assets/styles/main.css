@@ -272,7 +272,7 @@ body {
   display: flex;
   max-width: 698px;
   margin: 0 auto;
-  padding: 41px 0 38px;
+  padding: 41px 0 115px;
 }
 #page-user-screen .page-content .container {
   display: flex;
@@ -437,6 +437,36 @@ body {
 }
 #page-user-screen .page-content .confirmation-btn-container .btn:first-child {
   margin-top: 0;
+}
+#page-user-screen #main-footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 0;
+  background-color: #293C7D;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+}
+#page-user-screen #main-footer nav {
+  max-width: 698px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+#page-user-screen #main-footer nav a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+#page-user-screen #main-footer nav a .icon-container {
+  margin: 0 4px 0 0;
+}
+#page-user-screen #main-footer nav a .icon-container svg {
+  fill: #fff;
+  display: block;
 }
 
 #page-admin {
