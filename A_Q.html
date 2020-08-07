@@ -13,185 +13,253 @@
 <body>
 
 <div class="page-wrapper" id="page-admin">
-    <header id="main-header">
-        <div class="container">
-            <div class="top flex jc-sb">
-                <div class="header-box header-box-left">
-                    <h1>Class room Name Here</h1>
+    <aside>
+        <nav>
+            <a>
+                <span class="icon-container"></span>
+                Home
+            </a>
+            <a class="active">
+                <span class="icon-container">
+                    <svg width="16" height="16">
+                        <use xlink:href="assets/images/svg-sprite.svg#svg-icon-user"></use>
+                    </svg>
+                </span>
+                Pickup
+            </a>
+            <a>
+                <span class="icon-container">
+                    <svg width="16" height="16">
+                        <use xlink:href="assets/images/svg-sprite.svg#svg-icon-calendar"></use>
+                    </svg>
+                </span>
+                Schedule
+            </a>
+            <a>
+                <span class="icon-container">
+                    <svg width="16" height="16">
+                        <use xlink:href="assets/images/svg-sprite.svg#svg-icon-users"></use>
+                    </svg>
+                </span>
+                Children
+            </a>
+            <a>
+                <span class="icon-container">
+                    <svg width="16" height="16">
+                        <use xlink:href="assets/images/svg-sprite.svg#svg-icon-settings"></use>
+                    </svg>
+                </span>
+                Profile
+            </a>
+            <a>
+                <span class="icon-container">
+                    <svg width="16" height="16">
+                        <use xlink:href="assets/images/svg-sprite.svg#svg-icon-logout"></use>
+                    </svg>
+                </span>
+                Logout
+            </a>
+        </nav>
+    </aside>
+
+    <div class="inner-page">
+        <header id="main-header">
+            <div class="container">
+                <div class="top">
+                    <div class="header-box header-box-left">
+                        <h2 class="tablet-desktop-only">Queue App</h2>
+                        <h1 class="tablet-desktop-only">Pickup</h1>
+                        <h1 class="mobile-only">Class room Name Here</h1>
+                    </div>
+                    <div class="header-box header-box-right">
+                        <div class="profile-container">
+                            <p>username</p>
+                            <picture class="profile-image">
+                                <source srcset="assets/images/img-profile.webp 1x, assets/images/img-profile@2x.webp 2x, assets/images/img-profile@3x.webp 3x, assets/images/img-profile@4x.webp 4x" type="image/webp">
+                                <source srcset="assets/images/img-profile.jpg 1x, assets/images/img-profile@2x.jpg 2x, assets/images/img-profile@3x.jpg 3x, assets/images/img-profile@4x.jpg 4x" type="image/jpeg">
+                                <img src="assets/images/img-profile.jpg" alt="User Image">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
-                <div class="header-box header-box-right">
-                    <button class="btn btn-more" aria-label="More"><span></span></button>
+                <div class="bottom">
+                    <div class="header-box header-box-left">
+                        <nav>
+                            <a class="active">Queue</a>
+                            <a>Messages <span class="notification">3</span></a>
+                            <a>Class</a>
+                        </nav>
+                    </div>
+                    <div class="header-box header-box-right">
+                        <button class="btn btn-more" aria-label="More"><span></span></button>
+                    </div>
+
                 </div>
             </div>
-            <nav>
-                <a class="active">Queue</a>
-                <a>Messages <span class="notification">3</span></a>
-                <a>Class</a>
-            </nav>
-        </div>
-    </header>
+        </header>
 
-    <div class="page-content">
-        <div class="container">
-            <div class="tab-content queue-tab-content">
-                <div class="list-box">
-                    <header>
-                        <h3>Picking Up</h3>
-                        <p>Tap to indicate pick up</p>
-                    </header>
-                    <ul>
-                        <li class="list-item red">
-                            <a class="link-overlay"></a>
-                            <picture class="user-image">
-                                <source srcset="assets/images/img-user2.webp 1x, assets/images/img-user2@2x.webp 2x, assets/images/img-user2@3x.webp 3x, assets/images/img-user2@4x.webp 4x" type="image/webp">
-                                <source srcset="assets/images/img-user2.jpg 1x, assets/images/img-user2@2x.jpg 2x, assets/images/img-user2@3x.jpg 3x, assets/images/img-user2@4x.jpg 4x" type="image/jpeg">
-                                <img src="assets/images/img-user2.jpg" alt="User Image">
-                            </picture>
+        <div class="page-content">
+            <div class="container">
+                <div class="tab-content queue-tab-content">
+                    <div class="list-box">
+                        <header>
+                            <h3>Picking Up</h3>
+                            <p>Tap to indicate pick up</p>
+                        </header>
+                        <ul>
+                            <li class="list-item red">
+                                <a class="link-overlay"></a>
+                                <picture class="user-image">
+                                    <source srcset="assets/images/img-user2.webp 1x, assets/images/img-user2@2x.webp 2x, assets/images/img-user2@3x.webp 3x, assets/images/img-user2@4x.webp 4x" type="image/webp">
+                                    <source srcset="assets/images/img-user2.jpg 1x, assets/images/img-user2@2x.jpg 2x, assets/images/img-user2@3x.jpg 3x, assets/images/img-user2@4x.jpg 4x" type="image/jpeg">
+                                    <img src="assets/images/img-user2.jpg" alt="User Image">
+                                </picture>
 
-                            <div class="info">
-                                <p class="name">Samantha Carter</p>
-                                <span class="status white">Parent Notified</span>
-                            </div>
+                                <div class="info">
+                                    <p class="name">Samantha Carter</p>
+                                    <span class="status white">Parent Notified</span>
+                                </div>
 
-                            <div class="time">
-                                <p class="now"></p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="list-box">
-                    <header>
-                        <h3>Queue</h3>
-                        <p>Tap to indicate ready</p>
-                    </header>
-                    <ul>
-                        <li class="list-item green">
-                            <a class="link-overlay"></a>
-                            <span class="num ready">1</span>
-                            <picture class="user-image">
-                                <source srcset="assets/images/img-user3.webp 1x, assets/images/img-user3@2x.webp 2x, assets/images/img-user3@3x.webp 3x, assets/images/img-user3@4x.webp 4x" type="image/webp">
-                                <source srcset="assets/images/img-user3.jpg 1x, assets/images/img-user3@2x.jpg 2x, assets/images/img-user3@3x.jpg 3x, assets/images/img-user3@4x.jpg 4x" type="image/jpeg">
-                                <img src="assets/images/img-user3.jpg" alt="User Image">
-                            </picture>
+                                <div class="time">
+                                    <p class="now"></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list-box">
+                        <header>
+                            <h3>Queue</h3>
+                            <p>Tap to indicate ready</p>
+                        </header>
+                        <ul>
+                            <li class="list-item green">
+                                <a class="link-overlay"></a>
+                                <span class="num ready">1</span>
+                                <picture class="user-image">
+                                    <source srcset="assets/images/img-user3.webp 1x, assets/images/img-user3@2x.webp 2x, assets/images/img-user3@3x.webp 3x, assets/images/img-user3@4x.webp 4x" type="image/webp">
+                                    <source srcset="assets/images/img-user3.jpg 1x, assets/images/img-user3@2x.jpg 2x, assets/images/img-user3@3x.jpg 3x, assets/images/img-user3@4x.jpg 4x" type="image/jpeg">
+                                    <img src="assets/images/img-user3.jpg" alt="User Image">
+                                </picture>
 
-                            <div class="info">
-                                <p class="name">Bessie Cooper</p>
-                                <span class="status">En route</span>
-                            </div>
+                                <div class="info">
+                                    <p class="name">Bessie Cooper</p>
+                                    <span class="status">En route</span>
+                                </div>
 
-                            <div class="time">
-                                <p>3m</p>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="link-overlay"></a>
-                            <span class="num">2</span>
-                            <picture class="user-image">
-                                <source srcset="assets/images/img-user4.webp 1x, assets/images/img-user4@2x.webp 2x, assets/images/img-user4@3x.webp 3x, assets/images/img-user4@4x.webp 4x" type="image/webp">
-                                <source srcset="assets/images/img-user4.jpg 1x, assets/images/img-user4@2x.jpg 2x, assets/images/img-user4@3x.jpg 3x, assets/images/img-user4@4x.jpg 4x" type="image/jpeg">
-                                <img src="assets/images/img-user4.jpg" alt="User Image">
-                            </picture>
+                                <div class="time">
+                                    <p>3m</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <a class="link-overlay"></a>
+                                <span class="num">2</span>
+                                <picture class="user-image">
+                                    <source srcset="assets/images/img-user4.webp 1x, assets/images/img-user4@2x.webp 2x, assets/images/img-user4@3x.webp 3x, assets/images/img-user4@4x.webp 4x" type="image/webp">
+                                    <source srcset="assets/images/img-user4.jpg 1x, assets/images/img-user4@2x.jpg 2x, assets/images/img-user4@3x.jpg 3x, assets/images/img-user4@4x.jpg 4x" type="image/jpeg">
+                                    <img src="assets/images/img-user4.jpg" alt="User Image">
+                                </picture>
 
-                            <div class="info">
-                                <p class="name">Guy Hawkins</p>
-                                <span class="status red">Pickup Waiting</span>
-                            </div>
+                                <div class="info">
+                                    <p class="name">Guy Hawkins</p>
+                                    <span class="status red">Pickup Waiting</span>
+                                </div>
 
-                            <div class="time">
-                                <p>5m</p>
-                            </div>
-                        </li>
-                        <li class="list-item green">
-                            <a class="link-overlay"></a>
-                            <span class="num ready">3</span>
-                            <picture class="user-image">
-                                <source srcset="assets/images/img-user5.webp 1x, assets/images/img-user5@2x.webp 2x, assets/images/img-user5@3x.webp 3x, assets/images/img-user5@4x.webp 4x" type="image/webp">
-                                <source srcset="assets/images/img-user5.jpg 1x, assets/images/img-user5@2x.jpg 2x, assets/images/img-user5@3x.jpg 3x, assets/images/img-user5@4x.jpg 4x" type="image/jpeg">
-                                <img src="assets/images/img-user5.jpg" alt="User Image">
-                            </picture>
+                                <div class="time">
+                                    <p>5m</p>
+                                </div>
+                            </li>
+                            <li class="list-item green">
+                                <a class="link-overlay"></a>
+                                <span class="num ready">3</span>
+                                <picture class="user-image">
+                                    <source srcset="assets/images/img-user5.webp 1x, assets/images/img-user5@2x.webp 2x, assets/images/img-user5@3x.webp 3x, assets/images/img-user5@4x.webp 4x" type="image/webp">
+                                    <source srcset="assets/images/img-user5.jpg 1x, assets/images/img-user5@2x.jpg 2x, assets/images/img-user5@3x.jpg 3x, assets/images/img-user5@4x.jpg 4x" type="image/jpeg">
+                                    <img src="assets/images/img-user5.jpg" alt="User Image">
+                                </picture>
 
-                            <div class="info">
-                                <p class="name">Floyd Miles</p>
-                                <span class="status">En route</span>
-                            </div>
+                                <div class="info">
+                                    <p class="name">Floyd Miles</p>
+                                    <span class="status">En route</span>
+                                </div>
 
-                            <div class="time">
-                                <p>10m</p>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="link-overlay"></a>
-                            <span class="num">4</span>
-                            <picture class="user-image">
-                                <source srcset="assets/images/img-user6.webp 1x, assets/images/img-user6@2x.webp 2x, assets/images/img-user6@3x.webp 3x, assets/images/img-user6@4x.webp 4x" type="image/webp">
-                                <source srcset="assets/images/img-user6.jpg 1x, assets/images/img-user6@2x.jpg 2x, assets/images/img-user6@3x.jpg 3x, assets/images/img-user6@4x.jpg 4x" type="image/jpeg">
-                                <img src="assets/images/img-user6.jpg" alt="User Image">
-                            </picture>
+                                <div class="time">
+                                    <p>10m</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <a class="link-overlay"></a>
+                                <span class="num">4</span>
+                                <picture class="user-image">
+                                    <source srcset="assets/images/img-user6.webp 1x, assets/images/img-user6@2x.webp 2x, assets/images/img-user6@3x.webp 3x, assets/images/img-user6@4x.webp 4x" type="image/webp">
+                                    <source srcset="assets/images/img-user6.jpg 1x, assets/images/img-user6@2x.jpg 2x, assets/images/img-user6@3x.jpg 3x, assets/images/img-user6@4x.jpg 4x" type="image/jpeg">
+                                    <img src="assets/images/img-user6.jpg" alt="User Image">
+                                </picture>
 
-                            <div class="info">
-                                <p class="name">Dianne Russell</p>
-                                <span class="status yellow">Delayed</span>
-                            </div>
+                                <div class="info">
+                                    <p class="name">Dianne Russell</p>
+                                    <span class="status yellow">Delayed</span>
+                                </div>
 
-                            <div class="time">
-                                <p>15m</p>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="link-overlay"></a>
-                            <span class="num ">5</span>
-                            <picture class="user-image">
-                                <source srcset="assets/images/img-user7.webp 1x, assets/images/img-user7@2x.webp 2x, assets/images/img-user7@3x.webp 3x, assets/images/img-user7@4x.webp 4x" type="image/webp">
-                                <source srcset="assets/images/img-user7.jpg 1x, assets/images/img-user7@2x.jpg 2x, assets/images/img-user7@3x.jpg 3x, assets/images/img-user7@4x.jpg 4x" type="image/jpeg">
-                                <img src="assets/images/img-user7.jpg" alt="User Image">
-                            </picture>
+                                <div class="time">
+                                    <p>15m</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <a class="link-overlay"></a>
+                                <span class="num ">5</span>
+                                <picture class="user-image">
+                                    <source srcset="assets/images/img-user7.webp 1x, assets/images/img-user7@2x.webp 2x, assets/images/img-user7@3x.webp 3x, assets/images/img-user7@4x.webp 4x" type="image/webp">
+                                    <source srcset="assets/images/img-user7.jpg 1x, assets/images/img-user7@2x.jpg 2x, assets/images/img-user7@3x.jpg 3x, assets/images/img-user7@4x.jpg 4x" type="image/jpeg">
+                                    <img src="assets/images/img-user7.jpg" alt="User Image">
+                                </picture>
 
-                            <div class="info">
-                                <p class="name">Wade Warren</p>
-                                <span class="status">En route</span>
-                            </div>
+                                <div class="info">
+                                    <p class="name">Wade Warren</p>
+                                    <span class="status">En route</span>
+                                </div>
 
-                            <div class="time">
-                                <p>25m</p>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="link-overlay"></a>
-                            <span class="num ">6</span>
-                            <picture class="user-image">
-                                <source srcset="assets/images/img-user8.webp 1x, assets/images/img-user8@2x.webp 2x, assets/images/img-user8@3x.webp 3x, assets/images/img-user8@4x.webp 4x" type="image/webp">
-                                <source srcset="assets/images/img-user8.jpg 1x, assets/images/img-user8@2x.jpg 2x, assets/images/img-user8@3x.jpg 3x, assets/images/img-user8@4x.jpg 4x" type="image/jpeg">
-                                <img src="assets/images/img-user8.jpg" alt="User Image">
-                            </picture>
+                                <div class="time">
+                                    <p>25m</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <a class="link-overlay"></a>
+                                <span class="num ">6</span>
+                                <picture class="user-image">
+                                    <source srcset="assets/images/img-user8.webp 1x, assets/images/img-user8@2x.webp 2x, assets/images/img-user8@3x.webp 3x, assets/images/img-user8@4x.webp 4x" type="image/webp">
+                                    <source srcset="assets/images/img-user8.jpg 1x, assets/images/img-user8@2x.jpg 2x, assets/images/img-user8@3x.jpg 3x, assets/images/img-user8@4x.jpg 4x" type="image/jpeg">
+                                    <img src="assets/images/img-user8.jpg" alt="User Image">
+                                </picture>
 
-                            <div class="info">
-                                <p class="name">Wade Warren</p>
-                                <span class="status">En route</span>
-                            </div>
+                                <div class="info">
+                                    <p class="name">Wade Warren</p>
+                                    <span class="status">En route</span>
+                                </div>
 
-                            <div class="time">
-                                <p>30m</p>
-                            </div>
-                        </li>
-                        <li class="list-item">
-                            <a class="link-overlay"></a>
-                            <span class="num">7</span>
-                            <picture class="user-image">
-                                <source srcset="assets/images/img-user9.webp 1x, assets/images/img-user9@2x.webp 2x, assets/images/img-user9@3x.webp 3x, assets/images/img-user9@4x.webp 4x" type="image/webp">
-                                <source srcset="assets/images/img-user9.jpg 1x, assets/images/img-user9@2x.jpg 2x, assets/images/img-user9@3x.jpg 3x, assets/images/img-user9@4x.jpg 4x" type="image/jpeg">
-                                <img src="assets/images/img-user9.jpg" alt="User Image">
-                            </picture>
+                                <div class="time">
+                                    <p>30m</p>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <a class="link-overlay"></a>
+                                <span class="num">7</span>
+                                <picture class="user-image">
+                                    <source srcset="assets/images/img-user9.webp 1x, assets/images/img-user9@2x.webp 2x, assets/images/img-user9@3x.webp 3x, assets/images/img-user9@4x.webp 4x" type="image/webp">
+                                    <source srcset="assets/images/img-user9.jpg 1x, assets/images/img-user9@2x.jpg 2x, assets/images/img-user9@3x.jpg 3x, assets/images/img-user9@4x.jpg 4x" type="image/jpeg">
+                                    <img src="assets/images/img-user9.jpg" alt="User Image">
+                                </picture>
 
-                            <div class="info">
-                                <p class="name">Bessie Cooper</p>
-                                <span class="status">Arriving</span>
-                            </div>
+                                <div class="info">
+                                    <p class="name">Bessie Cooper</p>
+                                    <span class="status">Arriving</span>
+                                </div>
 
-                            <div class="time">
-                                <p>45m</p>
-                            </div>
-                        </li>
-                    </ul>
+                                <div class="time">
+                                    <p>45m</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
