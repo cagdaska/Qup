@@ -44,6 +44,22 @@ body {
   align-items: center;
 }
 
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-page {
+  padding: 0 0 0 84px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    padding: 0;
+  }
+}
+
 .mobile-only {
   @include mobile {
     display: block;

@@ -142,6 +142,23 @@ body {
   align-items: center;
 }
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-page {
+  padding: 0 0 0 84px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .inner-page {
+    padding: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .mobile-only {
     display: block;
@@ -224,13 +241,120 @@ body {
   cursor: default;
 }
 
+#main-aside {
+  width: 84px;
+  height: 100%;
+  background-color: #2E448E;
+  position: fixed;
+  padding: 0 0 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  z-index: 19;
+}
+@media (max-width: 767px) {
+  #main-aside {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    top: auto;
+    left: auto;
+    bottom: 0;
+    padding: 0;
+    position: sticky;
+  }
+}
+#main-aside nav {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  #main-aside nav {
+    width: auto;
+    max-width: 698px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+#main-aside nav a {
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  padding: 13px 0 14px;
+  color: #fff;
+  transition: background-color 0.1s;
+}
+#main-aside nav a:hover {
+  background-color: #3B56B3;
+}
+#main-aside nav a.active {
+  background-color: #F3F3F3;
+  color: #3851A7;
+}
+@media (max-width: 767px) {
+  #main-aside nav a.active {
+    background-color: #3B56B3;
+    color: #fff;
+  }
+}
+#main-aside nav a.active .icon-container {
+  background-color: #2E448E;
+}
+@media (max-width: 767px) {
+  #main-aside nav a.active .icon-container {
+    background-color: transparent;
+  }
+}
+@media (max-width: 767px) {
+  #main-aside nav a {
+    width: auto;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+}
+#main-aside nav a .icon-container {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: 0 auto 8px;
+  display: block;
+  background-color: #C4C4C4;
+}
+@media (max-width: 767px) {
+  #main-aside nav a .icon-container {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    margin: 0;
+    background-color: transparent;
+    padding: 0 4px;
+  }
+}
+#main-aside nav a .icon-container svg {
+  display: none;
+  fill: #fff;
+}
+@media (max-width: 767px) {
+  #main-aside nav a .icon-container svg {
+    display: block;
+  }
+}
+
 #page-user-screen {
   width: 100%;
   min-height: 100%;
   background: linear-gradient(150.65deg, #2E448E 0%, #3851A7 100%);
   color: #fff;
-  display: flex;
-  flex-direction: column;
 }
 #page-user-screen #main-header {
   max-width: 698px;
@@ -324,7 +448,7 @@ body {
   display: flex;
   max-width: 698px;
   margin: 0 auto;
-  padding: 41px 0 115px;
+  padding: 41px 0 25px;
 }
 #page-user-screen .page-content .container {
   display: flex;
@@ -536,121 +660,6 @@ body {
     padding: 0 8px;
   }
 }
-#page-admin aside {
-  width: 84px;
-  height: 100%;
-  background-color: #2E448E;
-  position: fixed;
-  padding: 0 0 20px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  z-index: 19;
-}
-@media (max-width: 767px) {
-  #page-admin aside {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
-    top: auto;
-    left: auto;
-    bottom: 0;
-    padding: 0;
-  }
-}
-#page-admin aside nav {
-  width: 100%;
-}
-@media (max-width: 767px) {
-  #page-admin aside nav {
-    width: auto;
-    max-width: 698px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
-}
-#page-admin aside nav a {
-  width: 100%;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: bold;
-  text-align: center;
-  display: block;
-  padding: 13px 0 14px;
-  color: #fff;
-  transition: background-color 0.1s;
-}
-#page-admin aside nav a:hover {
-  background-color: #3B56B3;
-}
-#page-admin aside nav a.active {
-  background-color: #F3F3F3;
-  color: #3851A7;
-}
-@media (max-width: 767px) {
-  #page-admin aside nav a.active {
-    background-color: #3B56B3;
-    color: #fff;
-  }
-}
-#page-admin aside nav a.active .icon-container {
-  background-color: #2E448E;
-}
-@media (max-width: 767px) {
-  #page-admin aside nav a.active .icon-container {
-    background-color: transparent;
-  }
-}
-@media (max-width: 767px) {
-  #page-admin aside nav a {
-    width: auto;
-    font-size: 16px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-  }
-}
-#page-admin aside nav a .icon-container {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  margin: 0 auto 8px;
-  display: block;
-  background-color: #C4C4C4;
-}
-@media (max-width: 767px) {
-  #page-admin aside nav a .icon-container {
-    width: auto;
-    height: auto;
-    border-radius: 0;
-    margin: 0;
-    background-color: transparent;
-    padding: 0 4px;
-  }
-}
-#page-admin aside nav a .icon-container svg {
-  display: none;
-  fill: #fff;
-}
-@media (max-width: 767px) {
-  #page-admin aside nav a .icon-container svg {
-    display: block;
-  }
-}
-#page-admin .inner-page {
-  padding: 0 0 0 84px;
-}
-@media (max-width: 767px) {
-  #page-admin .inner-page {
-    padding: 0 0 94px;
-  }
-}
 #page-admin .inner-page #main-header {
   width: calc(100% - 84px);
   background-color: #fff;
@@ -819,31 +828,43 @@ body {
   background-color: #292936;
 }
 #page-admin .inner-page .page-content {
-  padding: 156px 86px 50px 86px;
+  padding: 156px 86px 25px 86px;
+  flex-grow: 1;
+  display: flex;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #page-admin .inner-page .page-content {
-    padding: 156px 30px 50px;
+    padding: 156px 30px 25px;
   }
 }
 @media (max-width: 767px) {
   #page-admin .inner-page .page-content {
-    padding: 107px 0 40px 0;
+    padding: 107px 0 25px;
   }
 }
+#page-admin .inner-page .page-content > .container {
+  flex-grow: 1;
+  display: flex;
+}
 #page-admin .inner-page .page-content .tab-content {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-grow: 1;
+  flex-wrap: wrap;
 }
 @media (max-width: 767px) {
   #page-admin .inner-page .page-content .tab-content {
-    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
 #page-admin .inner-page .page-content .tab-content.messages-tab-content {
-  padding: 0 0 78px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #page-admin .inner-page .page-content .tab-content.messages-tab-content .list-box {
+  width: 100%;
   margin: 16px 0 0;
 }
 #page-admin .inner-page .page-content .tab-content .list-box {
@@ -1005,16 +1026,13 @@ body {
 #page-admin .inner-page .page-content .tab-content .message-input {
   width: 100%;
   max-width: 1300px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 18px 16px;
   background-color: #F3F3F3;
+  margin: 0 0 -20px;
 }
 #page-admin .inner-page .page-content .tab-content .message-input .input {
   max-height: 120px;
@@ -1029,6 +1047,7 @@ body {
   outline: none;
   border: none;
   padding: 10px 15px;
+  cursor: text;
 }
 #page-admin .inner-page .page-content .tab-content .message-input .input[contenteditable]:empty::before {
   content: "messages";
