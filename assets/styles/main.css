@@ -304,12 +304,12 @@ body {
     color: #fff;
   }
 }
-#main-aside nav a.active .icon-container {
-  background-color: #2E448E;
+#main-aside nav a.active .icon-container svg {
+  fill: #2E448E;
 }
 @media (max-width: 767px) {
-  #main-aside nav a.active .icon-container {
-    background-color: transparent;
+  #main-aside nav a.active .icon-container svg {
+    fill: #fff;
   }
 }
 @media (max-width: 767px) {
@@ -319,7 +319,7 @@ body {
     font-weight: 400;
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 15px 10px;
   }
 }
 #main-aside nav a .icon-container {
@@ -327,8 +327,9 @@ body {
   height: 32px;
   border-radius: 50%;
   margin: 0 auto 8px;
-  display: block;
-  background-color: #C4C4C4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 767px) {
   #main-aside nav a .icon-container {
@@ -341,11 +342,14 @@ body {
   }
 }
 #main-aside nav a .icon-container svg {
-  display: none;
+  width: auto;
+  height: 22px;
   fill: #fff;
 }
 @media (max-width: 767px) {
   #main-aside nav a .icon-container svg {
+    width: auto;
+    height: 16px;
     display: block;
   }
 }
