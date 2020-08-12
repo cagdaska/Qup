@@ -6,7 +6,8 @@
 
   #main-header {
     max-width: 698px;
-    padding: 32px 0 0;
+    min-height: 104px;
+    padding: 22px 0 0;
     display: flex;
     align-items: center;
     width: 100%;
@@ -123,6 +124,10 @@
     max-width: 698px;
     margin: 0 auto;
     padding: 41px 0 25px;
+
+    &.child-list{
+      padding: 13px 0 25px;
+    }
 
     .container {
       display: flex;
@@ -324,6 +329,171 @@
 
         &:first-child {
           margin-top: 0;
+        }
+      }
+    }
+
+    .child-box{
+      width: calc(100% + 54px);
+      background-color: #fff;
+      padding: 11px 12px 13px;
+      margin: 0 -27px 16px;
+
+      .info{
+        display: flex;
+        padding: 0 0 0 8px;
+
+        .img-container{
+          width: 62px;
+          flex-grow: 0;
+          flex-shrink: 0;
+
+          picture{
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            overflow: hidden;
+            filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
+            display: block;
+
+            img{
+              max-width: 100%;
+              width: auto;
+              height: 100%;
+              display: block;
+
+            }
+          }
+        }
+
+        .text{
+          max-width: calc(100% - 60px);
+          flex-grow: 1;
+          padding: 14px 0 0 60px;
+
+
+          h1{
+            width: 100%;
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 600;
+            color: $col_black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+
+          h2{
+            width: 100%;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 400;
+            color: $col_black;
+            margin: 4px 0 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      .image-actions{
+        padding: 3px 0 0;
+
+        button{
+          min-width: 78px;
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: bold;
+          border-radius: 4px;
+          text-align: center;
+          padding: 1px 13px 3px 14px;
+          display: block;
+
+          &.btn-remove{
+            color: #FFFFFF;
+            background: #EB7600;
+          }
+
+          &.e-upload-browse-btn,
+          &.e-file-upload-btn{
+            color: #2E448E;
+            background-color: #5EF38C;
+          }
+
+          &.e-file-clear-btn{
+            color: #fff;
+            background-color: #828282;
+          }
+
+        }
+
+        .e-upload{
+          color: #000;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .e-file-select,
+          .e-file-drop,
+          .e-file-size,
+          .e-file-status{
+            display: none;
+          }
+
+          .e-file-select-wrap{
+            width: 100%;
+          }
+
+          .e-upload-files{
+            width: 130px;
+            padding: 9px 20px 0 0;
+            flex-shrink: 0;
+            flex-grow: 0;
+
+            .e-file-container{
+              span{
+                font-size: 12px;
+                line-height: 14px;
+                overflow: hidden;
+
+                &.e-file-name{
+                  display: inline-block;
+                  max-width: 80px;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+
+                &.e-file-type{
+                  display: inline-block;
+                  margin: 0 0 0 -5px;
+                }
+              }
+            }
+          }
+
+          .e-upload-actions{
+            display: flex;
+            flex-grow: 1;
+            align-items: flex-start;
+            padding: 13px 0 10px;
+
+            button{
+              margin: 0;
+
+              &:last-child{
+                margin: 0 18px 0 0;
+              }
+
+              &.e-file-upload-btn{
+                order: 1;
+              }
+
+              &.e-file-clear-btn{
+                order: 2;
+              }
+            }
+          }
         }
       }
     }
