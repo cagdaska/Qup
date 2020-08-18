@@ -47,6 +47,19 @@ body {
 .page-wrapper{
   display: flex;
   flex-direction: column;
+
+  &.no-aside{
+    .inner-page{
+      padding-left: 0;
+
+      #main-header{
+        width: 100%!important;
+      }
+
+      .page-content{
+      }
+    }
+  }
 }
 
 .inner-page {

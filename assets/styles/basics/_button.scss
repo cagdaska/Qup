@@ -50,6 +50,14 @@
     padding: 17px;
     margin: 0 -15px;
 
+    &.btn-form-small{
+      width: auto;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 10px 33px 12px;
+      margin: 0;
+    }
+
     &.btn-white {
       background-color: #fff;
       color: #292936;
