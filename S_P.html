@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width">
+    <meta name=description content="Qup">
+    <title>Qup</title>
+    <link rel="shortcut icon" href="">
+    <link href="assets/styles/main.css" rel="stylesheet" type="text/css"/>
+    <script src="assets/js/mq.genie.min.js"></script>
+</head>
+<body>
+
+<div class="page-wrapper" id="page-admin">
+    <div class="inner-page">
+        <header id="main-header">
+            <div class="container">
+                <div class="top">
+                    <div class="header-box header-box-left">
+                        <h2>TimeToGo</h2>
+                        <h1>Settings</h1>
+                    </div>
+                    <div class="header-box header-box-right">
+                        <div class="profile-container">
+                            <p>username</p>
+                            <picture class="profile-image">
+                                <source srcset="assets/images/img-profile.webp 1x, assets/images/img-profile@2x.webp 2x, assets/images/img-profile@3x.webp 3x, assets/images/img-profile@4x.webp 4x" type="image/webp">
+                                <source srcset="assets/images/img-profile.jpg 1x, assets/images/img-profile@2x.jpg 2x, assets/images/img-profile@3x.jpg 3x, assets/images/img-profile@4x.jpg 4x" type="image/jpeg">
+                                <img src="assets/images/img-profile.jpg" alt="User Image">
+                            </picture>
+                        </div>
+                        <button class="btn btn-more" aria-label="More"><span></span></button>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="header-box header-box-left">
+                        <nav>
+                            <a class="active">Profile</a>
+                            <a>Email</a>
+                            <a>Password</a>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <div class="page-content">
+            <div class="container">
+                <div class="form-content">
+                    <div class="form-line box-line">
+                        <label for="f_email">Email</label>
+                        <input type="email" id="f_email" readonly value="email@timetogo.io">
+                    </div>
+                    <div class="form-line box-line">
+                        <label for="f_roles">Roles</label>
+                        <input type="text" id="f_roles" readonly value="member (read-only style)">
+                    </div>
+                    <div class="form-line box-line">
+                        <label for="f_phone">Phone</label>
+                        <input type="tel" id="f_phone">
+                    </div>
+                    <h4>Notifications</h4>
+                    <div class="form-line checkbox-line">
+                        <input type="checkbox" id="f_ready">
+                        <label for="f_ready">Ready for Pickup (Send Text)</label>
+                    </div>
+                    <div class="form-line checkbox-line">
+                        <input type="checkbox" id="f_chat">
+                        <label for="f_chat">Chat Message (Send Text)</label>
+                    </div>
+
+                    <button class="btn btn-pink btn-form btn-form-small btn-save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside id="main-aside">
+        <nav>
+            <a>
+                <span class="icon-container">
+                    <svg viewBox="0 0 8 8"><use xlink:href="assets/images/svg-sprite.svg#home"></use></svg>
+                </span>
+                Home
+            </a>
+            <a class="active">
+                <span class="icon-container">
+                    <svg viewBox="0 0 8 8"><use xlink:href="assets/images/svg-sprite.svg#person"></use></svg>
+                </span>
+                Pickup
+            </a>
+            <a>
+                <span class="icon-container">
+                    <svg viewBox="0 0 8 8"><use xlink:href="assets/images/svg-sprite.svg#calendar"></use></svg>
+                </span>
+                Schedule
+            </a>
+            <a>
+                <span class="icon-container">
+                    <svg viewBox="0 0 8 8"><use xlink:href="assets/images/svg-sprite.svg#people"></use></svg>
+                </span>
+                Children
+            </a>
+            <a>
+                <span class="icon-container">
+                    <svg viewBox="0 0 8 8"><use xlink:href="assets/images/svg-sprite.svg#cog"></use></svg>
+                </span>
+                Profile
+            </a>
+            <a>
+                <span class="icon-container">
+                    <svg viewBox="0 0 8 8"><use xlink:href="assets/images/svg-sprite.svg#account-logout"></use></svg>
+                </span>
+                Logout
+            </a>
+        </nav>
+    </aside>
+</div>
+
+</body>
+</html>

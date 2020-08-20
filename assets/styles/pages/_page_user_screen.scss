@@ -4,6 +4,98 @@
   background: linear-gradient(150.65deg, #2E448E 0%, #3851A7 100%);
   color: #fff;
 
+  &.page-homepage{
+
+    .page-content{
+      padding: 20px 0 25px;
+
+      .heading {
+        min-height: 98px;
+      }
+
+      #global-screen{
+        padding: 0 0 50px;
+      }
+
+      .smiley{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+        background: #5EF38C url("../images/icon-ready.svg") no-repeat 50% 50%;
+        margin: 0 auto;
+      }
+
+      .email-form{
+        width: 100%;
+        max-width: 335px;
+        margin: 84px auto 0;
+
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        input[type=tel]{
+          width: 100%;
+          border-radius: 12px;
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 500;
+          padding: 10px 15px;
+          outline: none;
+          border: none;
+
+          &::placeholder{
+            color: #ABABAB;
+            text-align: center;
+            font-style: italic;
+          }
+        }
+
+        .btn-form{
+          width: 100%;
+          margin: 12px auto 0;
+        }
+      }
+
+      .thanks-msg{
+        margin: 55px 0 0;
+
+        h2{
+          font-size: 36px;
+          line-height: 43px;
+          font-weight: 300;
+          text-align: center;
+        }
+
+        p{
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          color: #FFFFFF;
+          margin: 12px 0 0;
+        }
+      }
+
+      #faq-link{
+        font-size: 28px;
+        line-height: 34px;
+        font-weight: 500;
+        color: #ABABAB;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+  }
+
   #main-header {
     max-width: 698px;
     min-height: 104px;
@@ -252,6 +344,17 @@
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           }
         }
+      }
+    }
+
+    #global-screen{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .heading {
+        text-align: center;
       }
     }
 
