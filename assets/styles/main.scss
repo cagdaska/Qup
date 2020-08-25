@@ -16,8 +16,10 @@
 @import 'shared_content/header';
 @import 'shared_content/footer';
 @import 'shared_content/aside';
+@import 'shared_content/calendar';
 
 // Pages
 @import 'pages/page_user_screen';
 @import 'pages/page_admin';
 @import 'pages/page_no_user';
+@import 'pages/page_confirm';

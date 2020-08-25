@@ -484,6 +484,204 @@ body {
   }
 }
 
+.calendar {
+  max-width: 851px;
+  border: 1px solid #DEE2E6;
+  background-color: #F8F9FA;
+  align-self: flex-start;
+}
+.calendar .calendar-header {
+  display: flex;
+  height: 46px;
+  align-items: center;
+  padding: 0 26px 0 17px;
+  border-bottom: 1px solid #DEE2E6;
+}
+@media (max-width: 767px) {
+  .calendar .calendar-header {
+    padding: 0 10px 0 0;
+  }
+}
+.calendar .calendar-header .nav-buttons {
+  display: flex;
+  height: 100%;
+}
+.calendar .calendar-header .nav-buttons .btn.btn-prev, .calendar .calendar-header .nav-buttons .btn.btn-next {
+  width: 30px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .calendar .calendar-header .nav-buttons .btn.btn-prev, .calendar .calendar-header .nav-buttons .btn.btn-next {
+    width: 30px;
+  }
+}
+.calendar .calendar-header .nav-buttons .btn.btn-prev:before, .calendar .calendar-header .nav-buttons .btn.btn-next:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.calendar .calendar-header .nav-buttons .btn.btn-prev {
+  margin: 0 10px 0 0;
+}
+@media (max-width: 767px) {
+  .calendar .calendar-header .nav-buttons .btn.btn-prev {
+    margin: 0 3px 0 0;
+  }
+}
+.calendar .calendar-header .nav-buttons .btn.btn-prev:before {
+  border-width: 5.5px 6px 5.5px 0;
+  border-color: transparent #495057 transparent transparent;
+}
+.calendar .calendar-header .nav-buttons .btn.btn-next:before {
+  border-width: 5.5px 0 5.5px 6px;
+  border-color: transparent transparent transparent #495057;
+}
+.calendar .calendar-header .btn-date {
+  font-size: 16px;
+  margin: 0 0 0 16px;
+  padding: 0 28px 0 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .calendar .calendar-header .btn-date {
+    font-size: 15px;
+    margin: 0 0 0 10px;
+  }
+}
+.calendar .calendar-header .btn-date:after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 11px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 5.5px 0 5.5px;
+  border-color: #495057 transparent transparent transparent;
+}
+.calendar .calendar-header .date {
+  font-size: 14px;
+  margin: 0 0 0 auto;
+}
+.calendar .calendar-table {
+  width: 100%;
+  table-layout: fixed;
+  background-color: #fff;
+}
+.calendar .calendar-table thead th {
+  width: 18.02%;
+  border-left: 1px solid #DEE2E6;
+  border-bottom: 1px solid #DEE2E6;
+  padding: 10px 8px 9px;
+}
+.calendar .calendar-table thead th:first-child {
+  width: 9.9%;
+  padding: 0;
+  border-left: none;
+}
+.calendar .calendar-table thead th p {
+  font-size: 13px;
+  line-height: 17px;
+}
+.calendar .calendar-table thead th p span {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 1px 0 0;
+}
+.calendar .calendar-table tbody tr:last-child td,
+.calendar .calendar-table tbody tr:last-child th {
+  border-bottom: none;
+}
+.calendar .calendar-table tbody th {
+  border-bottom: 1px solid #DEE2E6;
+  padding: 0 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.calendar .calendar-table tbody th p {
+  font-size: 12px;
+  line-height: 16px;
+}
+.calendar .calendar-table tbody td {
+  border-bottom: 1px solid #DEE2E6;
+  border-left: 1px solid #DEE2E6;
+}
+.calendar .calendar-table tbody td:first-child {
+  border-left: none;
+}
+.calendar .calendar-table tbody td .event-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  padding: 1px;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .calendar .calendar-table tbody td .event-container {
+    flex-wrap: wrap;
+  }
+}
+.calendar .calendar-table tbody td .event-container .event {
+  width: calc(50% - 1px);
+  border-radius: 4px;
+  padding: 7px 8px 8px;
+}
+@media (max-width: 767px) {
+  .calendar .calendar-table tbody td .event-container .event {
+    width: calc(100% - 1px);
+    height: calc(50% - 1px);
+    padding: 3px 8px;
+  }
+}
+.calendar .calendar-table tbody td .event-container .event.blue {
+  background-color: #4B67C5;
+}
+.calendar .calendar-table tbody td .event-container .event.green {
+  background-color: #4BC569;
+}
+.calendar .calendar-table tbody td .event-container .event.grey {
+  background-color: #989898;
+}
+.calendar .calendar-table tbody td .event-container .event.left {
+  margin: auto 0 0 0;
+}
+@media (max-width: 767px) {
+  .calendar .calendar-table tbody td .event-container .event.left {
+    margin: 0 0 auto;
+  }
+}
+.calendar .calendar-table tbody td .event-container .event.right {
+  margin: 0 0 0 auto;
+}
+@media (max-width: 767px) {
+  .calendar .calendar-table tbody td .event-container .event.right {
+    margin: auto 0 0;
+  }
+}
+.calendar .calendar-table tbody td .event-container .event p {
+  color: #fff;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  pointer-events: none;
+}
+.calendar .calendar-table tbody td .event-container .event p.name {
+  font-size: 14px;
+  line-height: 16px;
+}
+.calendar .calendar-table tbody td .event-container .event p.time {
+  font-size: 11px;
+  line-height: 15px;
+  margin: 2px 0 0;
+}
+
 #page-user-screen {
   width: 100%;
   min-height: 100%;
@@ -1477,6 +1675,59 @@ body {
   #page-no-user .inner-page #main-header .bottom {
     min-height: 19px;
   }
+}
+
+#page-confirm {
+  width: 100%;
+  min-height: 100%;
+  background-color: #F3F3F3;
+}
+#page-confirm .page-content {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  max-width: 698px;
+  margin: 0 auto;
+  padding: 41px 0 25px;
+  text-align: center;
+}
+#page-confirm .page-content .container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+#page-confirm .page-content .confirmation-text {
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#page-confirm .page-content .confirmation-text h2 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  color: #979797;
+  margin: 0 0 0;
+}
+#page-confirm .page-content .confirmation-text h1 {
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 300;
+}
+#page-confirm .page-content .confirmation-text p {
+  font-size: 18px;
+  line-height: 29px;
+  margin: 70px 0 0;
+}
+#page-confirm .page-content .confirmation-text .btn-form {
+  max-width: 186px;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 70px 0 0;
+  padding: 10px 30px 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
