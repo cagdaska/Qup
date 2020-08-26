@@ -31,9 +31,9 @@
 
   .inner-page {
     #main-header {
-      width: calc(100% - 84px);
+      width: 100%;
       background-color: #fff;
-      position: fixed;
+      position: sticky;
       top: 0;
       padding: 20px 86px 0;
       z-index: 9;
@@ -151,18 +151,21 @@
         min-height: 59px;
         border-bottom: 1px solid #CBCBCB;
         padding: 12px 0 0;
-        align-items: center;
-        display: flex;
         justify-content: space-between;
+        display: flex;
 
         @include mobile {
           min-height: 45px;
           flex-wrap: wrap;
-          padding: 0;
+          padding: 0 11px;
         }
 
         .header-box {
+          display: flex;
+
           &.header-box-left {
+            align-items: center;
+
             @include mobile {
               width: 100%;
               order: 2;
@@ -170,8 +173,14 @@
             }
 
             nav {
+              width: 100%;
               display: flex;
               justify-content: space-evenly;
+
+              @include mobile{
+                width: calc(100% + 22px);
+                margin: 0 -11px;
+              }
 
               a {
                 font-size: 16px;
@@ -218,6 +227,34 @@
                 }
               }
             }
+
+            .msg-status{
+              font-size: 18px;
+              line-height: 22px;
+              font-weight: bold;
+              color: #5C5859;
+              align-self: flex-start;
+              padding: 4px 0 0;
+
+              @include mobile{
+                margin: 0 0 10px;
+              }
+            }
+
+            .msg-error{
+              font-size: 18px;
+              line-height: 22px;
+              font-weight: bold;
+              color: #721C24;
+              background: #F8D7DA;
+              border-radius: 5px;
+              padding: 5px 20px 8px;
+              align-self: flex-start;
+
+              @include mobile{
+                margin: 0 0 10px;
+              }
+            }
           }
 
           &.header-box-right {
@@ -234,16 +271,16 @@
     }
 
     .page-content {
-      padding: 156px 86px 25px 86px;
+      padding: 5px 86px 25px 86px;
       flex-grow: 1;
       display: flex;
 
       @include tablet {
-        padding: 156px 30px 25px;
+        padding: 5px 30px 25px;
       }
 
       @include mobile {
-        padding: 152px 0 25px;
+        padding: 5px 0 25px;
       }
 
       > .container {
