@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
@@ -1345,7 +1346,7 @@ body {
 }
 @media (max-width: 767px) {
   #page-admin .inner-page #main-header .bottom, #page-no-user .inner-page #main-header .bottom {
-    min-height: 45px;
+    min-height: 0;
     flex-wrap: wrap;
     padding: 0 11px;
   }
@@ -1693,6 +1694,50 @@ body {
 }
 #page-admin .inner-page .page-content .tab-content .message-input .btn-send:disabled, #page-no-user .inner-page .page-content .tab-content .message-input .btn-send:disabled {
   background-color: #eaeaea;
+}
+#page-admin .inner-page .page-content #faq-container, #page-no-user .inner-page .page-content #faq-container {
+  width: 100%;
+}
+#page-admin .inner-page .page-content #faq-container .faq-box, #page-no-user .inner-page .page-content #faq-container .faq-box {
+  background-color: #fff;
+  padding: 5px 12px 9px;
+  margin: 0 0 12px;
+}
+#page-admin .inner-page .page-content #faq-container .faq-box h3, #page-no-user .inner-page .page-content #faq-container .faq-box h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  border-bottom: 1px solid #CBCBCB;
+  padding: 0 0 4px;
+}
+#page-admin .inner-page .page-content #faq-container .faq-box ul, #page-no-user .inner-page .page-content #faq-container .faq-box ul {
+  margin: 9px 0 0;
+}
+#page-admin .inner-page .page-content #faq-container .faq-box ul li, #page-no-user .inner-page .page-content #faq-container .faq-box ul li {
+  margin: 11px 0 0;
+  padding: 0 0 0 0;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+}
+#page-admin .inner-page .page-content #faq-container .faq-box ul li:before, #page-no-user .inner-page .page-content #faq-container .faq-box ul li:before {
+  content: "•";
+  display: inline-block;
+  margin: 0 4px 0 0;
+}
+#page-admin .inner-page .page-content #faq-container .faq-box ul li:first-child, #page-no-user .inner-page .page-content #faq-container .faq-box ul li:first-child {
+  margin: 0;
+}
+#page-admin .inner-page .page-content #faq-container .faq-box ul li img, #page-no-user .inner-page .page-content #faq-container .faq-box ul li img,
+#page-admin .inner-page .page-content #faq-container .faq-box ul li svg,
+#page-no-user .inner-page .page-content #faq-container .faq-box ul li svg {
+  margin: 0 0 0 8px;
+  flex-shrink: 0;
+}
+#page-admin .inner-page .page-content #faq-container .faq-box ul li svg, #page-no-user .inner-page .page-content #faq-container .faq-box ul li svg {
+  width: 19px;
+  height: 19px;
 }
 
 @media (max-width: 767px) {
