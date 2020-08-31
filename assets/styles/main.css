@@ -1739,6 +1739,9 @@ body {
   width: 19px;
   height: 19px;
 }
+#page-admin .inner-page .page-content #faq-container .faq-box ul li .img-button, #page-no-user .inner-page .page-content #faq-container .faq-box ul li .img-button {
+  max-height: 16px;
+}
 
 @media (max-width: 767px) {
   #page-no-user .inner-page #main-header .top {
