@@ -1228,6 +1228,30 @@ body {
     padding: 0 8px;
   }
 }
+#page-admin .inner-page.no-padding #main-header, #page-no-user .inner-page.no-padding #main-header {
+  padding: 20px 0px 0;
+}
+@media (max-width: 767px) {
+  #page-admin .inner-page.no-padding #main-header, #page-no-user .inner-page.no-padding #main-header {
+    padding: 9px 0 0;
+  }
+}
+#page-admin .inner-page.no-padding #main-header .top, #page-no-user .inner-page.no-padding #main-header .top {
+  padding: 0 12px;
+}
+@media (max-width: 767px) {
+  #page-admin .inner-page.no-padding #main-header .top, #page-no-user .inner-page.no-padding #main-header .top {
+    padding: 16px 27px 21px 11px;
+  }
+}
+#page-admin .inner-page.no-padding .page-content, #page-no-user .inner-page.no-padding .page-content {
+  padding: 5px 0 25px;
+}
+@media (max-width: 767px) {
+  #page-admin .inner-page.no-padding .page-content, #page-no-user .inner-page.no-padding .page-content {
+    padding: 5px 0 25px;
+  }
+}
 #page-admin .inner-page #main-header, #page-no-user .inner-page #main-header {
   width: 100%;
   background-color: #fff;

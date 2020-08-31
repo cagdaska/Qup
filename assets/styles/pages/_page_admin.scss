@@ -29,6 +29,31 @@
   }
 
   .inner-page {
+    &.no-padding{
+      #main-header{
+        padding: 20px 0px 0;
+
+        @include mobile {
+          padding: 9px 0 0;
+        }
+
+        .top{
+          padding: 0 12px;
+
+          @include mobile {
+            padding: 16px 27px 21px 11px;
+          }
+        }
+      }
+      .page-content{
+        padding: 5px 0 25px;
+
+        @include mobile {
+          padding: 5px 0 25px;
+        }
+      }
+    }
+
     #main-header {
       width: 100%;
       background-color: #fff;
