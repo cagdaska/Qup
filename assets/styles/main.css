@@ -1063,9 +1063,7 @@ body {
   display: block;
 }
 #page-user-screen .page-content .child-box .info .img-container picture img {
-  max-width: 100%;
-  width: auto;
-  height: 100%;
+  max-height: 100%;
   display: block;
 }
 #page-user-screen .page-content .child-box .info .text {
@@ -1346,6 +1344,7 @@ body {
 }
 #page-admin .inner-page #main-header .top .header-box.header-box-right .profile-container .profile-image img, #page-no-user .inner-page #main-header .top .header-box.header-box-right .profile-container .profile-image img {
   display: block;
+  max-height: 100%;
 }
 #page-admin .inner-page #main-header .top .header-box.header-box-right .btn-more, #page-no-user .inner-page #main-header .top .header-box.header-box-right .btn-more {
   display: none;
