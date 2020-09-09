@@ -520,6 +520,7 @@
           padding: 18px 16px;
           background-color: #F3F3F3;
           margin: 0 0 -20px;
+          flex-wrap: wrap;
 
           .input {
             max-height: 120px;
@@ -556,6 +557,18 @@
               background-color: #eaeaea;
 
             }
+          }
+
+          .notification{
+            width: calc(100% - 63px);
+            text-align: center;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 500;
+            font-style: italic;
+            color: #808080;
+            margin: 5px 0 0;
+            padding: 0 20px;
           }
         }
       }
