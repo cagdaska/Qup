@@ -1641,9 +1641,6 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #292936;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 #page-admin .inner-page .page-content .tab-content .list-box ul .list-item .info .status.status, #page-no-user .inner-page .page-content .tab-content .list-box ul .list-item .info .status.status,
 #page-admin .inner-page .page-content .tab-content .list-box ul .list-item .info .preview.status {

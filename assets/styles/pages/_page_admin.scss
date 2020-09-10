@@ -462,9 +462,6 @@
                   font-size: 14px;
                   line-height: 17px;
                   color: $col_black;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
-                  white-space: nowrap;
 
                   &.status {
                     width: auto;
